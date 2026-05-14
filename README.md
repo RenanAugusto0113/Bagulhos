@@ -19,7 +19,7 @@ HTTP: Comunicação com serviços REST.
 ## ⚙️ Como abrir o código fonte
 Para rodar o projeto localmente, você precisa ter o Flutter SDK instalado em sua máquina e clonar o repositório git:
 ```bash
-git clone https://github.com/SEU_USUARIO/bagulhos.git
+git clone https://github.com/RenanAugusto0113/bagulhos.git
 cd bagulhos
 ```
 depois instalar as dependências:
