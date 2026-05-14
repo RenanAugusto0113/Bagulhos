@@ -1,11 +1,9 @@
 # 📦 Bagulhos
 Bagulhos é um aplicativo de gerenciamento de inventário e coleções desenvolvido com Flutter. Criado para ser leve, rápido e visualmente intuitivo, ele permite que você organize seus "bagulhos" com facilidade, suportando categorização, busca dinâmica e persistência de dados via API.
 
-Desenvolvido para uma atividade de faculdade do curso Ciência da Computação, modulo Desenvolvimento de Sistemas Móveis
+App feito para listar suas coleções, seus pertences, ou listar e categorizar literalmente qualquer outra coisa, digo... qualquer outro bagulho. Sinta se livre para usar fazer fork e usar como base para criar algum app de listagem mais sofisticado
 
-## 🎥 Demonstração
-Confira o vídeo explicando o funcionamento do programa e as decisões de design:
-(depois eu coloco o link do video aqui e atualizo o readme.md)
+Desenvolvido para uma atividade de faculdade do curso Ciência da Computação, modulo Desenvolvimento de Sistemas Móveis
 
 ## 🛠️ Tecnologias Utilizadas
 Flutter & Dart: Framework e linguagem principal.
