@@ -7,13 +7,18 @@ void main() async {
   /* Se não houver .env com chave API, então usa uma de fallback
 a API KEY do fallback é a mesma para todos e portanto não é recomendada. */
   try {
-    await dotenv.load(fileName: ".env");
+    await dotenv.load(fileName: "assets/config/.env");
   } catch (fallback) {
-    await dotenv.load(fileName: ".env.example");
-    print(
-      '[!] .env não encontrado | Usando API KEY de fallback (não recomendado)',
-    );
+    try {
+      await dotenv.load(fileName: "assets/config/.env.example");
+      print(
+        '[!] .env não encontrado | Usando API KEY de fallback (não recomendado)',
+      );
+    } catch (e) {
+      // Evita erro 404 caso seja executado via web
+    }
   }
+  print('Abrindo o app...');
   runApp(const BagulhosApp());
 }
 
