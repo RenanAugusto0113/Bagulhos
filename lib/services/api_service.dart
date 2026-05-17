@@ -4,12 +4,8 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import '../models/bagulho_model.dart';
 
 class ApiService {
-/* Se não encontrar .env, então usa a URL de fallback da qual é a
-mesma usada no desenvolvimento e portanto não é recomendada para uso */
-  final String _url = dotenv.get(
-    "API_URL",
-    fallback: "https://6a01fab70d92f63dd2532587.mockapi.io/bag/v1/bagulhos",
-  );
+  // Usa o link da API do .env
+  final String _url = dotenv.get("API_URL");
 
   // Buscar itens (GET)
   Future<List<Bagulho>> getBagulhos() async {
@@ -25,7 +21,6 @@ mesma usada no desenvolvimento e portanto não é recomendada para uso */
 
   // Inserir item (POST)
   Future<void> addBagulho(Bagulho novo) async {
-
     final response = await http.post(
       Uri.parse(_url),
       headers: {"Content-Type": "application/json"},
